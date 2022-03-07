@@ -1,0 +1,18 @@
+<div>
+    ID: <input #id type="number">
+</div>>
+<div>
+    Name: <input #name>
+</div>
+<div>
+    Img Url: <input #imageUrl>
+</div>
+<div>
+    Description: <input #description>
+</div>
+<div>
+    Tags: <input #tags>
+</div>
+<div>
+    <button (click)="addPokemon(id.value, name.value, imageUrl.value, description.value, tags.value)">Add Pokemon</button>
+</div>
