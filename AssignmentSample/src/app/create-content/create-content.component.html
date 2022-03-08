@@ -2,22 +2,22 @@
 <div>
     <label for="id">ID:</label><br>
   <input #id type="number", id  =id name="id" ><br>
-</div>>
+</div>
 <div>
     <label for="title">Title:</label><br>
    <input #title type="text", id = title, name="title">
 </div>
 <div>
     <label for="description">Description:</label><br>
-   <input #tdescription type="text", id = description name="description">
+   <input #description type="text", id = description name="description">
 </div>
 <div>
     <label for="creator">Creator</label><br>
-   <input #tcreator type="text", id = creator, name="creator">
+   <input #creator type="text", id = creator, name="creator">
 </div>
 <div>
     <label for="imageUrl">Image:</label><br>
-    <input #title type="imageUrl", id = imageUrl, name="imageUrl">
+    <input #imageUrl type="imageUrl", id = imageUrl, name="imageUrl">
 </div>
 <div>
     <label for="type">Type:</label><br>
@@ -25,7 +25,7 @@
 </div>
 <div>
     <label for="tags">Tags:</label><br>
-   <input #tag type="text", id = tags, name="tags">
+   <input #tags type="text", id = tags, name="tags">
 <div>
     <button (click)="addPokemon(id.value, title.value, description.value, creator.value, imageUrl.value, type.value, tags.value)">Add Pokemon</button>
 </div>
