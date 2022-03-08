@@ -1,18 +1,31 @@
+
 <div>
-    ID: <input #id type="number">
+    <label for="id">ID:</label><br>
+  <input #id type="number", id  =id name="id" ><br>
 </div>>
 <div>
-    Name: <input #name>
+    <label for="title">Title:</label><br>
+   <input #title type="text", id = title, name="title">
 </div>
 <div>
-    Img Url: <input #imageUrl>
+    <label for="description">Description:</label><br>
+   <input #tdescription type="text", id = description name="description">
 </div>
 <div>
-    Description: <input #description>
+    <label for="creator">Creator</label><br>
+   <input #tcreator type="text", id = creator, name="creator">
 </div>
 <div>
-    Tags: <input #tags>
+    <label for="imageUrl">Image:</label><br>
+    <input #title type="imageUrl", id = imageUrl, name="imageUrl">
 </div>
 <div>
-    <button (click)="addPokemon(id.value, name.value, imageUrl.value, description.value, tags.value)">Add Pokemon</button>
+    <label for="type">Type:</label><br>
+   <input #type type="text", id = type, name="type">
+</div>
+<div>
+    <label for="tags">Tags:</label><br>
+   <input #tag type="text", id = tags, name="tags">
+<div>
+    <button (click)="addPokemon(id.value, title.value, description.value, creator.value, imageUrl.value, type.value, tags.value)">Add Pokemon</button>
 </div>
