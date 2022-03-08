@@ -9,6 +9,7 @@ import { Content } from "../helper-files/content-interface";
 export class ContentListComponent implements OnInit {
   digimonList: Content[];
   titleFound?: boolean;
+  
 
   constructor() {
     this.digimonList = [{
@@ -67,7 +68,33 @@ export class ContentListComponent implements OnInit {
       // imgURL: 'https://upload.wikimedia.org/wikipedia/it/thumb/d/d5/Biyomon.png/390px-Biyomon.png',
       type: 'Champion'
     }];
+
+    let ourPromise = new Promise(function (success, fail) {
+      let testPass = true;
+      if (testPass) {
+        success("Addition is successful");
+      }
+      else {
+        fail("Failure :(");
+      }
+    });
+    ourPromise.then(sucessResult =>
+      console.log("addition is successfull"))
+      .catch((failResult) => {return console.log(failResult); });
+
+      
   }
+  
+  addPokemonToList(newPokemonAtEnd: Content): void{
+    console.log("Addition is successfull")
+    this.digimonList.push(newPokemonAtEnd);
+
+    this.digimonList = [...this.digimonList];
+    
+        
+  }
+
+  
 
   ngOnInit(): void {
   }
@@ -85,4 +112,6 @@ export class ContentListComponent implements OnInit {
       this.titleFound = false;
     }
   }
+
+  
 }

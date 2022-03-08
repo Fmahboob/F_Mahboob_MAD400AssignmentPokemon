@@ -1,4 +1,5 @@
 <!--<form>-->
+  <app-create-content (new PokemonEvent)="addPokemonToList($event)"></app-create-content>
 <div>
   <input #titleSearch>
   <button (click)="checkForTitle(titleSearch.value)">Title Check</button>
